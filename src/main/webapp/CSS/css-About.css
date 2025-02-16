@@ -1,0 +1,196 @@
+@charset "ISO-8859-1";
+
+
+.About-info{
+    width: 100%;
+    /* height: 600px; */
+    padding-top: 40px;
+    font-family: 'poppins', sans-serif;
+}
+
+.About-container{
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+    background-color: #8a2be2;
+    /* border-radius: 20px; */
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.About-container .AboutImg{
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+.About-container .AboutImg .AboutImage{
+    right: 50px;
+    object-fit: cover;
+    height: 550px;
+}
+
+.About-container .About-description{
+    width: 500px;
+    margin-left: 100px;
+    margin-top: 60px;
+    text-align: center;
+    align-items: center;
+}
+
+.About-container .About-description .about-des1{
+    padding: 20px;
+    margin: 10px;
+    margin-top: 40px;
+    font-size: 3rem;
+    color: #EED;
+}
+
+.About-container .About-description .about-des1 h1{
+	margin: 0;
+	padding: 0;
+}
+
+
+.About-container .About-description .about-des2{
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+    color: #EED;
+    word-spacing: 1px;
+    font-size: 1rem;
+}
+
+.About-container .About-description .about-des2 p{
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.About-container .About-description .about-des3{
+    display: inline-block;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.About-container .About-description .about-des3 a {
+    padding: 7px 30px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #8a2be2;
+    background-color: #f7f2f2;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.About-container .About-description .about-des3 a i {
+    display: none;
+}
+
+.About-container .About-description .about-des3 a:hover i {
+    display: inline;
+    padding: 0 10px;
+    font-size: 1.3rem;
+}
+
+
+/* About Us FAQs */
+
+.aboutFAQ{
+    width: 100%;
+    line-height: 1.6rem;
+    
+}
+
+.FAQ-header{
+    padding: 30px 0;
+    padding-left: 50px;
+    font-family: 'poppins', sans-serif;
+}
+
+.FAQ-header h3{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.FAQ-header .line{
+    margin-top: 7px;
+    height: 5px;
+    width: 450px;
+    /* border: none; */
+    border-radius: 9999px;
+    background-color: black;
+}
+
+.acc-container{
+    font-family: 'poppins', sans-serif;
+    padding-top: 40px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.acc-container .acc-content{
+    display: grid;
+    place-items: center;
+    margin: 30px;
+}
+
+.acc-container .acc-content .accordian{
+    height: auto;
+    width: 800px;
+    margin-bottom: 35px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0 0 5px rgb(155, 155, 155);
+    background-color: #f9fcff;
+    background-image: linear-gradient(147deg, #f9fcff 0%, #eef1f5 74%);
+}
+
+.acc-container .accordian .question
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 20px 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+.acc-container .accordian .question h4{
+	margin: 0;
+	padding: 0;
+}
+
+.acc-container .accordian .question .icon{
+    margin-right : 20px;
+}
+
+.acc-container .accordian .question .icon.active{
+    transform: rotate(180deg);
+}
+
+.acc-container .accordian .answer{
+    color: #666;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.acc-container .acc-content .accordian .answer p{
+    cursor: pointer;
+    text-align: justify;
+}

@@ -1,0 +1,241 @@
+@charset "ISO-8859-1";
+
+.service-info{
+    width: 100%;
+    height: 600px;
+    padding-top: 40px;
+    font-family: 'poppins', sans-serif;
+}
+
+.service-container{
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+    background-color: #8a2be2;
+    /* border-radius: 20px; */
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-container .serviceImg{
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.service-container .serviceImg .serviceImage{
+    right: 50px;
+    object-fit: cover;
+    height: 550px;
+}
+
+.service-container .description{
+    width: 500px;
+    margin-left: 100px;
+    margin-top: 60px;
+    text-align: center;
+    align-items: center;
+}
+
+.service-container .description .des1{
+    padding: 20px;
+    margin: 10px;
+    font-size: 3rem;
+    color: #EED;
+}
+
+.service-container .description .des1 h1{
+	margin: 0;
+	padding: 0;
+}
+
+.service-container .description .des2{
+    padding: 10px;
+    text-align: justify;
+    color: #EED;
+    word-spacing: 1px;
+    font-size: 1rem;
+}
+
+.service-container .description .des2 h3{
+	margin: 0;
+	padding: 0;
+}
+
+.service-container .description .des2 p{
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.service-container .description .des3{
+    display: inline-block;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.service-container .description .des3 a {
+    padding: 7px 30px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #8a2be2;
+    background-color: #f7f2f2;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.service-container .description .des3 a i {
+    display: none;
+}
+
+.service-container .description .des3 a:hover i {
+    display: inline;
+    padding: 0 10px;
+    font-size: 1.3rem;
+}
+
+
+/* section second */
+
+.service-info2{
+    margin-top: 60px;
+    width: 100%;
+    /* height: 600px; */
+    /* padding-top: 40px; */
+    font-family: 'poppins', sans-serif;
+}
+
+.service-header{
+    margin: 30px;
+    padding-top: 40px;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.service-header h2{
+    font-size: 2.3rem;
+}
+
+.service-header p{
+    font-size: 1.4rem;
+    margin-top: 15px;
+}
+
+.service-provider{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-provider .service-slate{
+    width: 100%;
+    height: 100%;
+    margin: 20px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-provider .service-slate .service-card{
+    display: block;
+    width: 270px;
+    height: auto;
+    margin: 10px 20px;
+    border: 1px solid black;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 7px rgba(15, 15, 15, 0.3);
+}
+
+.service-provider .service-slate .service-card .icon-tag{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-provider .service-slate .service-card .icon-tag i{
+    font-size: 6rem;
+    padding: 30px 20px;
+}
+
+.service-provider .service-slate .service-card .card-info{
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.service-provider .service-slate .service-card .card-info h3{
+    margin-top: 15px;
+    font-size: 1.8rem;
+}
+
+.service-provider .service-slate .service-card .card-info p{
+    margin-top: 15px;
+    font-size: 1.2rem;
+    padding: 0 5px;
+}
+
+.service-card .card-info p a{
+    text-decoration: none;
+    color: black;
+}
+
+.service-card {
+    position: relative;
+    overflow: hidden;
+    color: #000; /* Set the initial text color */
+    transition: color 1s; /* Add a transition for the text color */
+}
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #8a2be2;
+    transition: top .4s, background-color 1s; /* Add a transition for background color */
+    z-index: -1; /* Move the pseudo-element below the content */
+}
+
+.service-card:hover::before {
+    top: 0;
+    color: #fff; /* Set the text color when hovering */
+}
+
+.service-card:hover .icon-tag i,
+.service-card:hover .card-info h3,
+.service-card:hover .card-info p,
+.service-card:hover .card-info p a{
+    color: #EED;
+}
+
+
+.service-card:hover .card-info p a:hover{
+    color: gold;
+    text-decoration: underline gold;
+}
+
+.service-footerPara{
+    margin: 40px 0;
+    text-align: justify;
+    font-size: 1.4rem;
+
+}
+
+.service-footerPara h4{
+    margin: 0 auto;
+    width: 900px;
+}

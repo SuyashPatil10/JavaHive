@@ -1,0 +1,315 @@
+@charset "ISO-8859-1";
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #FFF;
+}
+
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "aside aside aside info-update info-update info-update info-update"
+    "aside aside aside info-update info-update info-update info-update"
+    "aside aside aside info-update info-update info-update info-update"
+    "my-learning my-learning my-learning info-update info-update info-update info-update";
+    row-gap: 16px;
+    column-gap: 16px;
+    /* height: 600px; */
+    width: 85%;
+    padding-top: 85px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+#aside{
+    grid-area: aside;
+}
+
+#my-learning{
+    grid-area: my-learning;
+}
+
+#info-update{
+    grid-area: info-update;
+}
+
+
+.aside{
+    box-shadow: 0 0 4px 0px #999;
+    border-radius: 20px;
+    background-color: #FFF;
+}
+
+.primary-info{
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #BBB;
+}
+
+.user-image{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-image h2{
+    padding: 5px 0 10px 0;
+    margin: 0;
+}
+
+/* .image{
+    
+} */
+
+.image i{
+    display: block;
+    margin-top: 10px;
+    padding: 20px 25px;
+    font-size: 5rem;
+    color: #EEF;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(to top left, rgb(68, 150, 238), rgb(10, 124, 246));
+    /* background-color: rgb(46, 224, 126); */
+}
+
+.secondary-info{
+    padding: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.secondary-info .titles{
+	height: 100%;
+}
+
+.secondary-info .titles h4{
+    /* display: block; */
+    padding: 10px 0;
+    margin: 0;
+}
+
+.secondary-info .subjects{
+	height: 100%;
+	top: 0;
+}
+
+.secondary-info .subjects p{
+    padding: 10px 0;
+    margin: 0;
+}
+
+.URL{
+	font-size: 0.8rem;
+}
+
+/* my learning section */
+.my-learning{
+    /* box-shadow: 0 0 4px 0px #999;
+    border-radius: 20px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* linear-gradient(to top left, #39b385, #9be15d);
+linear-gradient(to top left, #e52a5a, #ff585f);
+linear-gradient(to top left, #ffb003, #ffcb03); 
+background: linear-gradient(to top left, rgb(55, 145, 242), rgb(0, 123, 255));
+background: linear-gradient(to top left, rgb(78, 163, 255), rgb(22, 129, 244));*/
+
+.home-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top left, rgb(68, 150, 238), rgb(10, 124, 246));
+    padding: 20px 40px 20px 40px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.home-page i{
+    display: block;
+    font-size: 3rem;
+    color: #EFF;
+}
+.home-page a{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #EFF;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.home-page a:hover{
+    text-decoration: underline;
+}
+
+.learning form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top left, rgb(68, 150, 238), rgb(10, 124, 246));
+    padding: 20px 30px 20px 30px;
+    border-radius: 20px;
+}
+
+.learning i{
+    display: block;
+    font-size: 3rem;
+    color: #EFF;
+}
+
+.learning button{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #EFF;
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+.learning button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+/* information-update section */
+.info-update{
+    /* background-color: blueviolet; */
+    padding: 20px;
+    box-shadow: 0 0 4px 0px #999;
+    border-radius: 20px;
+    padding-top: 40px;
+    background-color: #FFF;
+}
+
+.info-update .update-information{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.update__inputs:nth-child(odd){
+    padding: 0 0 0 40px;
+}
+
+.update__inputs:nth-child(even){
+    padding: 0 30px 0 0;
+}
+
+.update__inputs p{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 4px;
+}
+
+.update__inputs input{
+    width: 300px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: #EEF;
+    border-radius: 5px;
+    margin: 4px 0;
+    transition: border 0.2s ease;
+}
+
+.update__inputs input:hover{
+    border: 1px solid rgb(0, 123, 255);
+}
+
+.update-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px 20px 45px;
+}
+
+.update-btn .btn button{
+    display: block;
+    padding: 10px 16px;
+    background: linear-gradient(to top left, rgb(68, 150, 238), rgb(10, 124, 246));
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.update-btn .btn:last-of-type button{
+    background: #EEE;
+    color: #333;
+}
+
+.pre-loader{
+    background: #191919 url(../Images/loader.gif) no-repeat center center;
+    background-size: 30%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    display: none;
+}
+
+.success-msg{
+	position: absolute;
+	margin-top: 80px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.success-msg p{
+	padding: 0;
+	margin: 0;
+	padding: 15px 10px;
+	background: linear-gradient(to top left, #39b385, #9be15d);
+	color: white;
+	border-radius: 4px;
+}
+
+.error-msg{
+	position: absolute;
+	margin-top: 80px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* transform: translateX(50%); */
+}
+
+.error-msg p{
+	padding: 0;
+	margin: 0;
+	padding: 10px;
+	background: linear-gradient(to top left, #e52a5a, #ff585f);
+	color: white;
+	border-radius: 4px;
+}

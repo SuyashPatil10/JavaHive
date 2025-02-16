@@ -1,0 +1,191 @@
+@charset "ISO-8859-1";
+
+
+
+/* main CSS */
+
+h1{
+	margin: 0;
+	padding: 0;
+}
+
+.main{
+    overflow-y: auto;
+    background: linear-gradient(90deg, #EDF1F4, #C3CBDC);
+    text-align: start;
+    padding: 0 15px;
+}
+
+.main .header{
+    padding: 15px 0;
+    font-size: 20px;
+}
+
+.main .header h1{
+	margin: 0;
+	padding: 0;
+}
+
+.main .text-area{
+    width: 100%;
+    text-align: justify;
+}
+
+.main .text-area .text{
+    font-size: 18px;
+    padding: 10px 0;
+    margin: 0;
+}
+
+
+.image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.image img{
+    border-radius: 4px;
+}
+
+
+/* Using list in page */
+.main .text-area .text ol li{
+    margin-left: 20px;
+}
+
+
+.code{
+    margin: 0;
+    padding: 0;
+}
+
+.code pre{
+    padding: 0 8px;
+    margin: 0;
+}
+
+.read-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.toggle{
+    opacity: 0;
+}
+
+
+.toggle + label{
+    position: relative;
+
+}
+
+.toggle + label::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #c6d0cc;
+    width: 4rem;
+    height: 2rem;
+    border-radius: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.toggle + label::after{
+    content: '';
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.15rem;
+    left: 0.15rem;
+    transition: transform 0.3s ease;
+}
+
+.toggle:checked + label::before{
+    background-color: #20b776;
+}
+
+.toggle:checked + label::after{
+    transform: translateX(2rem);
+}
+
+/* for loading the loader */
+.pre-loader{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pre-loader .loader{
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    border: 8px solid #CCC;
+    border-right-color: blueviolet;
+    border-radius: 50%;
+    z-index: 100;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.success-msg{
+	position: absolute;
+	margin-top: 80px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.success-msg p{
+	padding: 0;
+	margin: 0;
+	padding: 15px 10px;
+	background: linear-gradient(to top left, #39b385, #9be15d);
+	color: white;
+	border-radius: 4px;
+}
+
+.error-msg{
+	position: absolute;
+	margin-top: 80px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* transform: translateX(50%); */
+}
+
+.error-msg p{
+	padding: 0;
+	margin: 0;
+	padding: 10px;
+	background: linear-gradient(to top left, #e52a5a, #ff585f);
+	color: white;
+	border-radius: 4px;
+}
+

@@ -1,0 +1,153 @@
+@charset "ISO-8859-1";
+
+/* My Learning CSS */
+
+.total-tutorials{
+    padding-top: 120px;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.total-tutorials .topics{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #EFF; */
+    background-color: rgb(253, 247, 247);
+    padding: 20px 0;
+    width: 80%;
+    /* border-radius: 9999px; */
+}
+
+.total-tutorials .topics p{
+	padding: 0;
+	margin: 0;
+}
+
+.total-tutorials .heading{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 230, 0, 0.4);
+    padding: 20px 0;
+    width: 80%;
+    /* border-radius: 9999px; */
+    margin-top: 30px;
+    word-spacing: 3px;
+    font-size: 1.1rem;
+}
+
+.total-tutorials .heading h4{
+	padding: 0;
+	margin: 0;
+}
+
+
+/* tutotal container */
+.tutorial-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 60px;
+}
+
+.tutorial-container .tutorial-heading{
+    width: 70%;
+    padding: 40px 0;
+}
+
+
+
+.tutorial-container .tutorial-heading p{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+.tutorial-container .tutorial-content{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 60px;
+    margin-bottom: 60px;
+}
+
+.tutorial-container .tutorial-content .tutorial-card{
+    border: 0.3px solid #CCC;
+    border-radius: 15px;
+    padding: 10px 0;
+    transition: all 0.2s ease;
+}
+
+.tutorial-container .tutorial-content .tutorial-card:hover{
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    cursor: pointer;
+}
+
+.tutorial-card .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+    border-bottom: 1px solid #CCC;
+}
+
+.tutorial-card .card-body{
+    padding: 10px 10px 0 10px;
+}
+
+.tutorial-card .card-body p{
+    font-size: 0.7rem;
+    padding: 5px 0;
+    margin: 0;
+}
+
+.tutorial-card .card-body h4{
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 5px 0;
+    margin: 0;
+}
+
+.tutorial-card .card-body .percentage{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.tutorial-card .card-body .percentage h2{
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.tutorial-card .card-body .slider{
+    width: 100%;
+    height: 8px;
+    background-color: #EEE;
+    border: 1px solid #CCC;
+    border-radius: 9999px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+/* .tutorial-card .card-body .slider .range{
+    height: 100%;
+    width: 0%;
+    background-color: #333;
+    border-radius: 9999px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+} */
